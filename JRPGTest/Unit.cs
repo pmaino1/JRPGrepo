@@ -9,6 +9,8 @@ namespace JRPGTest
     class Unit
     {
         public int level;
+        public string name;
+        public string title;
 
         //general stats
         public int maxHP; 
@@ -31,24 +33,26 @@ namespace JRPGTest
         //arts
         //public Arts arts;
 
+        //TODO elemental
+
         //TODO graphic/sound information
 
         /*
-         * <summary>Generic Unit constructor with a List shortcut.</summary>
-         * <param name = "elevenStats">The 11 stats for a unit.</param>
+         * <summary>Generic Unit empty constructor.</summary>
          */
-        public Unit(List<int> elevenStats)
+        public Unit()
         {
-            //TODO
         }
 
         /*
          * <summary>Generic Unit constructor.</summary>
          */
-        public Unit(int level, int maxHP, int maxAP, int strength, int defense, int magic, int resilience,
-            int speed, int agility, int skill, int luck)
+        public Unit(int level, string name, string title, int maxHP, int maxAP, int strength, int defense, int magic,
+            int resilience, int speed, int agility, int skill, int luck)
         {
             this.level = level;
+            this.name = name;
+            this.title = title;
             this.maxHP = maxHP;
             this.maxAP = maxAP;
             this.strength = strength;
@@ -59,6 +63,9 @@ namespace JRPGTest
             this.agility = agility;
             this.skill = skill;
             this.luck = luck;
+
+            currHP = maxHP;
+            currAP = maxAP;
         }
     }
 }
