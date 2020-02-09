@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JRPGTest
 {
-    class Unit
+    class Unit:IComparable<Unit>
     {
         public int level;
         public string name;
@@ -27,6 +27,7 @@ namespace JRPGTest
         //in combat stats
         public int currHP;
         public int currAP;
+        public int turnSpeed; //Contains the current speed order, used for turn counts. 100-0.
         //public Status statuses;
 
 
@@ -66,6 +67,23 @@ namespace JRPGTest
 
             currHP = maxHP;
             currAP = maxAP;
+            turnSpeed = 1000;
+        }
+
+        /*Implemented for the turnQueue MinPriorityQueue in Battle Manager.
+         * <returns>1 if this' turnSpeed is lower, 0 otherwise. </returns>
+         */
+        public int CompareTo(Unit other)
+        {
+            if(other == null)
+            {
+                return 1;
+            }
+            else if(this.turnSpeed < other.turnSpeed)
+            {
+                return 1;
+            }
+            return 0;
         }
     }
 }

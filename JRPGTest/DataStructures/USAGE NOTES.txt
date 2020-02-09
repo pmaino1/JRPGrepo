@@ -1,0 +1,7 @@
+﻿
+THESE CLASSES WERE NOT WRITTEN BY THE MAKERS OF THIS PROJECT.
+
+- Full credit for these classes goes to Ahmad Alhour (https://github.com/aalhour) for creating them. 
+- They were taken from this github repo of C# Algorithms (https://github.com/aalhour/C-Sharp-Algorithms) that was created for
+  for educational and reference purposes.
+- These classes were used fairly and with no intent to claim them as our own.

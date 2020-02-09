@@ -8,5 +8,21 @@ namespace JRPGTest
 {
     class ConsoleView
     {
+        private BattleManager battleManager;
+
+        public ConsoleView()
+        {
+
+        }
+
+        public void LinkWithBattleManager(BattleManager bm)
+        {
+            battleManager = bm;
+        }
+
+        public void tickDisplay()
+        {
+
+        }
     }
 }
