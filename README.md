@@ -11,3 +11,7 @@ A backend framework for a JRPG idea, made to be implimentable in Unity. Currentl
 - <i>"AP Turns"</i>: Take multiple actions per turn using AP, and save AP for later turns by defending.
 - <i>"Arts System"</i>: Arts are skills each character can learn, but they have limited uses rather than using MP or SP like other JRPGs. Expending all the uses leads to dangerous OR beneficial consequences.
 - <i>"Synergy"</i>: Hit elemental weaknesses, score critical hits, and defend smartly to gain synergy points, which are shared between your whole party. These can be used for universal commands OR for powerful team attacks.
+
+
+##### Credit:
+- https://github.com/aalhour/C-Sharp-Algorithms/ provided some data structures used in this project.
