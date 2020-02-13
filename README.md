@@ -1,8 +1,7 @@
 # JRPGrepo
 Repo for a potential JRPG!
-By Paul Maino and Adam Guarino.
 
-A backend framework for a JRPG idea, made to be implimentable in Unity. Currently using a placeholder console frontend but the backend will be able to be implimented with little modification.
+A backend framework for a JRPG idea, made to be implimentable in Unity. Currently using a placeholder console frontend but the backend will be able to be implimented in Unity with little modification.
 
 ##### Features of the JRPG:
 - <i>Turn based combat</i>.
