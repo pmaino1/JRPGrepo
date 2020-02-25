@@ -20,9 +20,16 @@ namespace JRPGTest
             battleManager = bm;
         }
 
-        public void tickDisplay()
+        public void startMainLoop()
+        {
+            mainLoop();
+        }
+
+        private void mainLoop()
         {
 
         }
+
+        
     }
 }

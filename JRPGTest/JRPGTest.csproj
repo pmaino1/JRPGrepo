@@ -43,13 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleAction.cs" />
+    <Compile Include="BattleManager.cs" />
+    <Compile Include="ConsoleView.cs" />
+    <Compile Include="DataStructures\ArrayList.cs" />
+    <Compile Include="DataStructures\BinaryMinHeap.cs" />
+    <Compile Include="DataStructures\Comparers.cs" />
+    <Compile Include="DataStructures\IMinHeap.cs" />
+    <Compile Include="DataStructures\MinPriorityQueue.cs" />
     <Compile Include="EnemyUnit.cs" />
+    <Compile Include="PlayerUnit.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Units.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataStructures\USAGE NOTES.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

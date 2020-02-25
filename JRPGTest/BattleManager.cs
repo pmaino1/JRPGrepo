@@ -32,12 +32,7 @@ namespace JRPGTest
             UnitInit();
         }
 
-        public void startMainLoop()
-        {
-            mainLoop();
-        }
-
-        private void mainLoop()
+        public void tick()
         {
 
         }

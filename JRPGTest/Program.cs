@@ -12,10 +12,10 @@ namespace JRPGTest
          * Class Interaction Plan:
          * _______________________
          * Program calls BattleManager.
-         * BattleManager main loop will perform combat logic.
-         * BattleManager main loop also will feed ConsoleView data and call tickDisplay().
+         * ConsoleView main loop will perform combat logic.
+         * ConsoleView main loop also will feed BattleManager data and call tick().
          * Unit series classes will simply store data.
-         * ConsoleView handles player input and passes it back to BattleManager.
+         * ConsoleView handles player input and passes it back to BattleManager when it calls tick().
          */
 
         private static BattleManager bm;
@@ -28,7 +28,8 @@ namespace JRPGTest
             bm = new BattleManager(cv);
             cv.LinkWithBattleManager(bm);
 
-            bm.startMainLoop();
+            //starts the combat mainloop
+            cv.startMainLoop();
         }
     }
 }
