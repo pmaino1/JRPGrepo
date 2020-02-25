@@ -45,9 +45,8 @@ namespace JRPGTest
         {
         }
 
-        /*
-         * <summary>Generic Unit constructor.</summary>
-         */
+
+        /// <summary>Generic Unit constructor.</summary>
         public Unit(int level, string name, string title, int maxHP, int maxAP, int strength, int defense, int magic,
             int resilience, int speed, int agility, int skill, int luck)
         {
